@@ -18,7 +18,7 @@ func _run():
 			coll_shape.name = node.name + "_col"
 			coll_shape.shape = node_shape
 			area_node.add_child(coll_shape)
-			coll_shape.add_owner(area_node)
+			coll_shape.set_owner(area_node)
 		else:
 			pass
 	
