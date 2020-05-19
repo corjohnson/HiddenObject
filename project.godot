@@ -15,9 +15,10 @@ _global_script_class_icons={
 
 [application]
 
-config/name="HiddenObject"
+config/name="Fragmented Glow"
+config/description="Simple hidden object game where you have to click the parts of the cube to find the glowing cube"
 run/main_scene="res://Game.tscn"
-config/icon="res://icon.png"
+config/icon="res://FragmentedGlowIcon.png"
 
 [input]
 

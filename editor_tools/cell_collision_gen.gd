@@ -7,6 +7,7 @@ func _run():
 	
 	for node in children:
 		if node is MeshInstance:
+			pass
 			print("Node name: ", node.name)
 			var area_node = Area.new()
 			area_node.name = node.name + "_area"
@@ -19,6 +20,9 @@ func _run():
 			coll_shape.shape = node_shape
 			area_node.add_child(coll_shape)
 			coll_shape.set_owner(area_node)
+		elif node is Area:
+			node.connect("input_event", scene, "_on_cell_area_input_event")
+			pass
 		else:
 			pass
 	
